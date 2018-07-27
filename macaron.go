@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	PROJECT_NAME = "Kriptokuna"
+	PROJECT_NAME = "Kriptodinar"
 )
 
 func initMacaron() *macaron.Macaron {
