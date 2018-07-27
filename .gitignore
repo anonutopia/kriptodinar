@@ -1,0 +1,8 @@
+kriptodinar
+config.json
+deploy.sh
+kdn.db
+.vscode/
+.vscode/*
+appnew*
+deploy-test.sh
