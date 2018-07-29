@@ -17,10 +17,10 @@ func homeView(ctx *macaron.Context) {
 	ctx.HTML(200, "home")
 }
 
-func kriptokunaView(ctx *macaron.Context) {
-	ctx.Data["Title"] = "Što je Kriptokuna? | "
+func kriptodinarView(ctx *macaron.Context) {
+	ctx.Data["Title"] = "Što je Kriptodinar? | "
 
-	ctx.HTML(200, "kriptokuna")
+	ctx.HTML(200, "o-kriptodinaru")
 }
 
 func manifestView(ctx *macaron.Context) {

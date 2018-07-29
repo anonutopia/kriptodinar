@@ -24,7 +24,7 @@ func main() {
 	db = initDb()
 
 	m.Get("/", newPageData, homeView)
-	m.Get("/o-kriptokuni/", newPageData, kriptokunaView)
+	m.Get("/o-kriptodinaru/", newPageData, kriptodinarView)
 	m.Get("/blokirani/", newPageData, manifestView)
 	m.Get("/pitanja/", newPageData, faqView)
 	m.Get("/pridruzi-se/", newPageData, volontirajView)
