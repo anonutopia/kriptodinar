@@ -3,7 +3,7 @@
             <div class="container">
                 <h2>Kontakt</h2>
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Početna</a></li>
+                    <li class="breadcrumb-item"><a href="/">Naslovna</a></li>
                     <li class="breadcrumb-item active">Kontakt</li>
                 </ul>
             </div>
@@ -29,27 +29,17 @@
                 <!-- /Section-header -->
 
                 <!-- contact -->
-                <div class="col-sm-4">
-                    <div class="contact">
-                        <i class="fa fa-telegram"></i>
-                        <h3>Telegram</h3>
-                        <p><a href="https://t.me/anonutopia_balkan" target="_blank">t.me/anonutopia_balkan</a></p>
-                    </div>
-                </div>
-                <!-- /contact -->
-
-                <!-- contact -->
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="contact">
                         <i class="fa fa-envelope"></i>
                         <h3>Email</h3>
-                        <p>{{ obfuscate "anonutopia@protonmail.com" }}</p>
+                        <p>{{ obfuscate "anonsrbija@protonmail.com" }}</p>
                     </div>
                 </div>
                 <!-- /contact -->
 
                 <!-- contact -->
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="contact">
                         <i class="fa fa-github"></i>
                         <h3>GitHub</h3>
@@ -76,10 +66,10 @@
                         <p class="bg-danger text-danger" style="margin-bottom: 20px; padding: 15px;">Catpcha brojevi nisu tačni. Molimo vas da pokušate opet.</p>
 {{ end }}
 {{ if .SendError }}
-                        <p class="bg-danger text-danger" style="margin-bottom: 20px; padding: 15px;">Dogodila se greška. Molimo Vas da pokušate opet..</p>
+                        <p class="bg-danger text-danger" style="margin-bottom: 20px; padding: 15px;">Dogodila se greška. Molimo vas da pokušate opet..</p>
 {{ end }}
 {{ if .Success }}
-                        <p class="bg-success text-success" style="margin-bottom: 20px; padding: 15px;">Poruka je uspešno poslana. Odgovorćemo vam u najkraćem mogućem roku.</p>
+                        <p class="bg-success text-success" style="margin-bottom: 20px; padding: 15px;">Poruka je uspješno poslata. Odgovorit ćemo vam u najkraćem mogućem roku.</p>
 {{ end }}
                         <button class="main-btn">Pošalji poruku</button>
                     </form>
