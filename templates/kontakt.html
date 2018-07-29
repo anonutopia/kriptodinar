@@ -3,7 +3,7 @@
             <div class="container">
                 <h2>Kontakt</h2>
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Naslovnica</a></li>
+                    <li class="breadcrumb-item"><a href="/">Početna</a></li>
                     <li class="breadcrumb-item active">Kontakt</li>
                 </ul>
             </div>
@@ -73,13 +73,13 @@
                         <p class="bg-danger text-danger" style="margin-bottom: 20px; padding: 15px;">Molimo vas da popunite sva potrebna polja.</p>
 {{ end }}
 {{ if .CaptchaError }}
-                        <p class="bg-danger text-danger" style="margin-bottom: 20px; padding: 15px;">Catpcha brojevi nisu točni. Molimo vas da pokušate opet.</p>
+                        <p class="bg-danger text-danger" style="margin-bottom: 20px; padding: 15px;">Catpcha brojevi nisu tačni. Molimo vas da pokušate opet.</p>
 {{ end }}
 {{ if .SendError }}
-                        <p class="bg-danger text-danger" style="margin-bottom: 20px; padding: 15px;">Dogodila se greška. Molimo vas da pokušate opet..</p>
+                        <p class="bg-danger text-danger" style="margin-bottom: 20px; padding: 15px;">Dogodila se greška. Molimo Vas da pokušate opet..</p>
 {{ end }}
 {{ if .Success }}
-                        <p class="bg-success text-success" style="margin-bottom: 20px; padding: 15px;">Poruka je uspješno poslana. Odgovorit ćemo vam u najkraćem mogućem roku.</p>
+                        <p class="bg-success text-success" style="margin-bottom: 20px; padding: 15px;">Poruka je uspešno poslana. Odgovorćemo vam u najkraćem mogućem roku.</p>
 {{ end }}
                         <button class="main-btn">Pošalji poruku</button>
                     </form>
