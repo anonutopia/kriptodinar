@@ -18,7 +18,7 @@ func homeView(ctx *macaron.Context) {
 }
 
 func kriptodinarView(ctx *macaron.Context) {
-	ctx.Data["Title"] = "Što je Kriptodinar? | "
+	ctx.Data["Title"] = "Šta je Kriptodinar? | "
 
 	ctx.HTML(200, "o-kriptodinaru")
 }
@@ -47,8 +47,8 @@ func volontirajPostView(ctx *macaron.Context, hsup HackerSignupForm, f *session.
 		if s.Len() == 0 {
 			ha := &Hacker{Email: hsup.Email, Type: hsup.Type}
 			db.FirstOrCreate(ha, ha)
-			f.Success("Dodan/a u našu Core Team bazu, javit ćemo se uskoro.")
-			f.Warning("Za Kriptokunu reci svim korisnicima Ubera (vozačima i putnicima) i svim blokiranim građanima koje poznaješ!")
+			f.Success("Dodat/a u našu Core Team bazu, javićemo se uskoro.")
+			f.Warning("Za Kriptodinar reci svim korisnicima Ubera (vozačima i putnicima) i svim blokiranim građanima koje poznaješ!")
 			ctx.Redirect("/pridruzi-se/#hackersignup")
 			return
 		} else {
@@ -80,8 +80,8 @@ func signupView(ctx *macaron.Context, sup SignupForm, f *session.Flash, cpt *cap
 		if s.Len() == 0 {
 			ha := &Hacktivist{Email: sup.Email, Type: sup.Type}
 			db.FirstOrCreate(ha, ha)
-			f.Success("Uspješno si dodan/a u našu bazu hacktivista, javit ćemo se uskoro.")
-			f.Warning("Za Kriptokunu reci svim korisnicima Ubera (vozačima i putnicima) i svim blokiranim građanima koje poznaješ!")
+			f.Success("Uspešno si dodat/a u našu bazu hacktivista, javićemo se uskoro.")
+			f.Warning("Za Kriptodinar reci svim korisnicima Ubera (vozačima i putnicima) i svim blokiranim građanima koje poznaješ!")
 			ctx.Redirect("/#signup")
 			return
 		} else {
@@ -111,7 +111,7 @@ func novcanikView(ctx *macaron.Context) {
 }
 
 func anoteView(ctx *macaron.Context) {
-	ctx.Data["Title"] = "Što je ANOTE? | "
+	ctx.Data["Title"] = "Šta je ANOTE? | "
 
 	ctx.HTML(200, "anote")
 }
