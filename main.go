@@ -34,6 +34,8 @@ func main() {
 	m.Get("/anote/", newPageData, anoteView)
 	m.Get("/transparentnost/", newPageData, transparentnostView)
 	m.Get("/kontakt/", newPageData, kontaktView)
+	m.Get("/zarada/", newPageData, profitView)
+	m.Get("/projekti/", newPageData, projectsView)
 
 	// m.Post("/", binding.Bind(SignupForm{}), newPageData, signupView)
 	m.Post("/pridruzi-se/", binding.Bind(HackerSignupForm{}), newPageData, volontirajPostView)

@@ -35,6 +35,18 @@ func manifestView(ctx *macaron.Context) {
 	ctx.HTML(200, "blokirani")
 }
 
+func profitView(ctx *macaron.Context) {
+	ctx.Data["Title"] = "Zarađivanje u Anonutopiji | "
+
+	ctx.HTML(200, "profit")
+}
+
+func projectsView(ctx *macaron.Context) {
+	ctx.Data["Title"] = "Projekti Anonutopije | "
+
+	ctx.HTML(200, "projects")
+}
+
 func volontirajView(ctx *macaron.Context) {
 	ctx.Data["Title"] = "Pridruži se već danas! | "
 
